@@ -1,0 +1,35 @@
+# increased responsiveness
+set -s escape-time 1
+
+# start window & pane indexes to 1
+set -g base-index 1
+set -g pnae-base-index 1
+
+# enamble mouse
+setw -g mode-mouse on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+set -g mouse-select-window on
+
+# 256 colors
+set -g default-terminal "screen-256color"
+
+# reload configuration
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+# split panes
+bind | split-window -h
+bind - split-window -v
+
+# movement
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# resizing
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
