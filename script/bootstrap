@@ -122,7 +122,7 @@ update_ohmyzsh() {
 }
 
 #setup_gitconfig
-#update_ohmyzsh
+update_ohmyzsh
 install_dotfiles
 
 echo ''

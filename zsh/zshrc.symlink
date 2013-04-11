@@ -36,6 +36,8 @@ ZSH_CUSTOM=$DOTFILES/zsh/custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+export TERM=xterm-256color
+eval `dircolors ~/.dir_colors`
 source ~/.localrc
 source $ZSH/oh-my-zsh.sh
 

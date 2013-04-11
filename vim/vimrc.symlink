@@ -9,7 +9,7 @@ set hlsearch
 set incsearch
 
 syntax enable
-" colorscheme desert
+colorscheme solarized
 set background=dark
 set encoding=utf8
 set ffs=unix,dos,mac
@@ -28,3 +28,5 @@ set tw=500
 set ai
 set si
 set wrap
+
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
