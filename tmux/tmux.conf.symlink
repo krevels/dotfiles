@@ -15,8 +15,45 @@ set -g mouse-select-pane on
 set -g mouse-resize-pane on
 set -g mouse-select-window on
 
+# enable activity alerts
+setw -g monitor-activity on
+set -g visual-activity on
+
 # 256 colors
 set -g default-terminal "screen-256color"
+
+# messing w/ status line colors
+set -g status-fg white
+set -g status-bg black
+
+# window list colors
+setw -g window-status-fg cyan
+setw -g window-status-bg default
+setw -g window-status-attr dim
+
+# active window colors
+setw -g window-status-current-fg white
+setw -g window-status-current-bg yellow
+#setw -g window-status-current-attr bright
+
+# pane colors
+set -g pane-border-fg green
+set -g pane-border-bg black
+set -g pane-active-border-fg white
+set -g pane-active-border-bg cyan
+
+# command / message line
+set -g message-fg white
+set -g message-attr bright
+
+# status line left side
+set -g status-left-length 40
+set -g status-left "#[fg=green]Session: #S #[fg=yellow]#I #[fg=cyan]#P"
+
+set -g status-utf8 on
+
+# center window list
+set -g status-justify centre
 
 # reload configuration
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
@@ -37,3 +74,13 @@ bind -r J resize-pane -D 5
 bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
 
+# vi mode
+setw -g mode-keys vi
+
+# vim-like copy/paste
+unbind [
+# bind Escape copy-mode  -- not sure I want this yet
+unbind p
+bind p paste-buffer
+bind -t vi-copy 'v' begin-selection
+bind -t vi-copy 'y' copy-selection
