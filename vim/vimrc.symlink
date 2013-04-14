@@ -40,3 +40,7 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+
+"" NERDTree
+map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+map <leader>f :NERDTreeFind<CR>
