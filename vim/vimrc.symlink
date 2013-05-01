@@ -13,8 +13,8 @@ set hlsearch
 set incsearch
 
 syntax enable
-colorscheme solarized
-set background=dark
+"" colorscheme solarized
+"" set background=dark
 set encoding=utf8
 set ffs=unix,dos,mac
 
