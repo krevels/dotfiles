@@ -38,3 +38,6 @@ plugins=(git)
 
 source ~/.localrc
 source $ZSH/oh-my-zsh.sh
+
+# annoying tmux hack
+if [[ -f .rvmrc ]]; then cd..;1; fi
