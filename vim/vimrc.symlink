@@ -13,8 +13,8 @@ set hlsearch
 set incsearch
 
 syntax enable
-"" colorscheme solarized
-"" set background=dark
+colorscheme solarized
+set background=dark
 set encoding=utf8
 set ffs=unix,dos,mac
 
@@ -34,6 +34,7 @@ set si
 set wrap
 
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd BufNewFile,BufRead *.twig setf htmljinja
 
 "" Tough love
 nnoremap <up> <nop>
