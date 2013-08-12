@@ -41,4 +41,4 @@ source ~/.localrc
 source $ZSH/oh-my-zsh.sh
 
 # annoying tmux hack
-if [[ -f .rvmrc ]]; then cd..;1; fi
+if [[ (-f .rvmrc) || (-f .ruby-version) ]]; then cd..;1; fi
