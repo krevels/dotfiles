@@ -48,7 +48,8 @@ set -g message-attr bright
 
 # status line left side
 set -g status-left-length 40
-set -g status-left "#[fg=green]Session: #S #[fg=yellow]#I #[fg=cyan]#P"
+#set -g status-left "#[fg=green]Session: #S #[fg=yellow]#I #[fg=cyan]#P"
+set -g status-left "#[fg=white]Session: #S #[fg=white]#I #[fg=white]#P"
 
 set -g status-utf8 on
 
