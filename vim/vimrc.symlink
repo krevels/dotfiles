@@ -45,3 +45,8 @@ nnoremap <right> <nop>
 "" NERDTree
 map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 map <leader>f :NERDTreeFind<CR>
+
+"" Directory-level vim configfs
+if filereadable(".vim.custom")
+  so .vim.custom
+endif
