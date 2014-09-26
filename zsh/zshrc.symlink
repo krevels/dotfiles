@@ -42,3 +42,5 @@ source $ZSH/oh-my-zsh.sh
 
 # annoying tmux hack
 if [[ (-f .rvmrc) || (-f .ruby-version) ]]; then cd..;1; fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

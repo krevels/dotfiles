@@ -32,6 +32,7 @@ set tw=500
 set ai
 set si
 set wrap
+set tags+=gems.tags
 
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd BufNewFile,BufRead *.twig setf htmljinja
