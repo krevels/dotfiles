@@ -89,4 +89,5 @@ bind C-y run "tmux save-buffer - | xclip -i"
 # bind -t vi-copy 'v' begin-selection
 # bind -t vi-copy 'y' copy-selection
 
+set -g default-command "$SHELL --login"
 set-option -g default-shell $SHELL
