@@ -18,6 +18,10 @@ set background=dark
 set encoding=utf8
 set ffs=unix,dos,mac
 
+"" Highlighting
+set cursorline
+set cursorcolumn
+
 set nobackup
 set nowb
 set noswapfile
@@ -46,6 +50,9 @@ nnoremap <right> <nop>
 "" NERDTree
 map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 map <leader>f :NERDTreeFind<CR>
+
+"" CTRL-P
+let g:ctrlp_custom_ignore='\v[\/](\.git|\.hg|\.svn|node_modules|bower_components)$'
 
 "" Directory-level vim configfs
 if filereadable(".vim.custom")
