@@ -28,3 +28,6 @@
 [submodule "vim/vim.symlink/bundle/vim-cjsx"]
 	path = vim/vim.symlink/bundle/vim-cjsx
 	url = https://github.com/mtscout6/vim-cjsx.git
+[submodule "vim/vim.symlink/bundle/colorschemes"]
+	path = vim/vim.symlink/bundle/colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
