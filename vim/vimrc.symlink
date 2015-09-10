@@ -11,9 +11,10 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+let base16colorspace=256
 
 syntax enable
-colorscheme solarized
+colorscheme base16-default
 set background=dark
 set encoding=utf8
 set ffs=unix,dos,mac
