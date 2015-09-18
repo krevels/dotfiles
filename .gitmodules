@@ -31,3 +31,9 @@
 [submodule "vim/vim.symlink/bundle/colorschemes"]
 	path = vim/vim.symlink/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/vim.symlink/bundle/yajs.vim"]
+	path = vim/vim.symlink/bundle/yajs.vim
+	url = https://github.com/othree/yajs.vim.git
+[submodule "vim/vim.symlink/bundle/javascript-libraries-syntax.vim"]
+	path = vim/vim.symlink/bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
