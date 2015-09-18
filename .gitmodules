@@ -37,3 +37,9 @@
 [submodule "vim/vim.symlink/bundle/javascript-libraries-syntax.vim"]
 	path = vim/vim.symlink/bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "vim/vim.symlink/bundle/base16-vim"]
+	path = vim/vim.symlink/bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule "shell/base16-shell.symlink"]
+	path = shell/base16-shell.symlink
+	url = https://github.com/chriskempson/base16-shell.git
