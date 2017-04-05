@@ -37,12 +37,14 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git vagrant)
 
+[ ! -f "$HOME/.localrc" ] && touch $HOME/.localrc
+
 source ~/.localrc
 source $ZSH/oh-my-zsh.sh
 
 # Base 16 Shell
-# BASE16_SHELL="$HOME/.base16-shell/base16-default.dark.sh"
-# [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+BASE16_SHELL="$HOME/.base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # annoying tmux hack
 if [[ (-f .rvmrc) || (-f .ruby-version) ]]; then cd..;1; fi

@@ -32,7 +32,7 @@ setw -g window-status-bg default
 setw -g window-status-attr dim
 
 # active window colors
-setw -g window-status-current-fg white
+setw -g window-status-current-fg black
 setw -g window-status-current-bg yellow
 #setw -g window-status-current-attr bright
 
