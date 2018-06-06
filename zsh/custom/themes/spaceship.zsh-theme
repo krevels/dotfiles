@@ -1,1 +1,1 @@
-/home/krevels/.dotfiles/zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
+/Users/kyril.revels/.dotfiles/zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
