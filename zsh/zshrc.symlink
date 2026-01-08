@@ -55,4 +55,12 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-[ -s "/Users/krevels/.scm_breeze/scm_breeze.sh" ] && source "/Users/krevels/.scm_breeze/scm_breeze.sh"
+if  [[ -z "$CLAUDE_RUNNING" ]]; then
+  [ -s "/Users/krevels/.scm_breeze/scm_breeze.sh" ] && source "/Users/krevels/.scm_breeze/scm_breeze.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
+
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
